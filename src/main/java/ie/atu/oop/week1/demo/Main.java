@@ -5,6 +5,7 @@ public class Main {
         String eventName = "Summer Concert";
         double basePrice = 50.0;
 
+
         Ticket alice = new Ticket(eventName, "Alice", basePrice);
         StudentTicket bob = new StudentTicket(eventName, "Bob", basePrice, "S12345");
         VIPTicket charlie = new VIPTicket(eventName, "Charlie", basePrice);
