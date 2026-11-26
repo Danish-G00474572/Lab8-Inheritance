@@ -1,15 +1,16 @@
 package ie.atu.oop.week1.demo;
 
 public class VIPTicket extends Ticket {
-    public VIPTicket(String eventName, String holderName, Double basePrice) {
+    public VIPTicket(String eventName, String holderName, double basePrice) {
         super(eventName, holderName, basePrice);
     }
 
     @Override
-    public Double calculatePrice() {
-        return super.calculatePrice()+25;
+    public double calculatePrice() {
+        return getBasePrice() + 25;
     }
-    public void getBenefits(){
-        System.out.println("Priority entry and reserved seating");
+
+    public String getBenefits() {
+        return "Priority entry and reserved seating";
     }
 }

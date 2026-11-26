@@ -1,11 +1,12 @@
 package ie.atu.oop.week1.demo;
 
+
 public class Ticket {
     private String eventName;
     private String holderName;
-    private Double basePrice;
+    private double basePrice;
 
-    public Ticket(String eventName, String holderName, Double basePrice) {
+    public Ticket(String eventName, String holderName, double basePrice) {
         this.eventName = eventName;
         this.holderName = holderName;
         this.basePrice = basePrice;
@@ -19,19 +20,16 @@ public class Ticket {
         return holderName;
     }
 
-    public Double getBasePrice() {
+    public double getBasePrice() {
         return basePrice;
     }
-    public Double calculatePrice() {
+
+    public double calculatePrice() {
         return basePrice;
     }
 
     @Override
     public String toString() {
-        return "Ticket{" +
-                "eventName='" + eventName + '\'' +
-                ", holderName='" + holderName + '\'' +
-                ", basePrice=" + basePrice +
-                '}';
+        return eventName + " ticket for " + holderName + ", base price €" + basePrice;
     }
 }
