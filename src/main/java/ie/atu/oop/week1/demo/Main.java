@@ -3,8 +3,6 @@ package ie.atu.oop.week1.demo;
 public class Main {
     public static void main(String[] args) {
         String eventName = "Summer Concert";
-
-        // Change to 80.0 for the second price check.
         double basePrice = 50.0;
 
         Ticket alice = new Ticket(eventName, "Alice", basePrice);
